@@ -1,0 +1,352 @@
+<html>
+<head>
+	<title>Practice</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<style type="text/css">
+	.col{
+		padding: 1%;
+	}
+	.clickDesignContainer{
+		
+	}
+	.threeColumns{
+
+	}
+	img{
+		overflow: hidden;
+    	width: 100%;
+	}
+	.twoColumns{
+		margin-top: 5px;
+	}
+	.openDesigns{
+		position: absolute;
+		bottom: 0;
+		margin: 0 auto;
+		margin-left: 50%;
+		border-radius:0;
+	}
+	.product-detail-box{
+		border:1px solid red;
+		margin: 0;
+	}
+	.information-entry .list-of-designs-container{
+		text-align: center;
+		height: 600px;
+		transition:all 0.3s linear;
+		overflow: hidden;
+	}
+	.information-entry .list-of-designs-container:hover{
+		overflow-y:scroll;
+	}
+	div.list-of-designs-container::-webkit-scrollbar
+	 {
+	    width: 8px;
+	}
+
+	div.list-of-designs-container::-webkit-scrollbar-track {
+	    -webkit-box-shadow: inset 0 0 6px rgba(158, 200, 224, 1);
+	    border-radius: 3px;
+	}
+
+	div.list-of-designs-container::-webkit-scrollbar-thumb {
+	    border-radius: 10px;
+	    -webkit-box-shadow: inset 0 0 6px rgba(29, 70, 93, 0.41);
+	}
+	.information-entry  h4{
+		font-family: Virgo,Georgia,Arial,Verdana,Helvetica,sans-serif;
+		font-size: 2vw;
+		text-align: center;
+		color:#444;
+	}
+	.information-entry .list-of-designs-container ul{
+		list-style-type: none;
+		padding:5px;
+	}
+	
+	.information-entry .list-of-designs-container ul li.list-container {
+		border:1px solid #eee;
+		width: 100%;
+		margin-top: 5px;
+		height: auto;
+		color:#444;
+		transition: all 0.2s linear;
+
+	}
+	.information-entry .list-of-designs-container ul li.list-container:hover{
+		box-shadow: 0px 0px 4px #aaa;
+		cursor: pointer;
+	}
+	.information-entry .list-of-designs-container ul li.list-container img{
+		height: 100px;
+		width: 100px;
+		float: left;
+		margin: 0 auto;
+	}
+	.information-entry .list-of-designs-container ul li.list-container #designName{
+
+	}
+	.information-entry .list-of-designs-container ul li.list-container #designCategory{
+		font-size: 14pt;	
+		font-weight: normal;
+	}
+	.information-entry .list-of-designs-container ul li.list-container a{
+		color:#444;
+		text-decoration: none;
+	}
+	.information-entry .list-of-designs-container ul li.list-container a:hover{
+		cursor: pointer;
+	}
+	span.clear { clear: left; display: block; }
+
+	@media only screen and (max-width: 580px) {
+    .information-entry  h4 {
+        font-size: 8vw;
+    }
+}
+
+
+	</style>
+</head>
+<body>
+
+<section>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12 col-sm-12 col-xs-12">
+				<div class="row threeColumns">
+					<div class="col-lg-4 col-xs-6 col-md-6 col">
+						<div class="clickDesignContainer">	
+							<img src="img1.jpg">
+							<button class="btn btn-primary openDesigns">
+								click
+							</button>
+						</div>
+					</div>
+					<div class="col-lg-4 col-xs-6 col-md-6 col">
+						<div class="clickDesignContainer">	
+							<img src="img1.jpg">
+						</div>
+					</div>
+					<div class="col-lg-4 col-xs-6 col-md-6 col">
+						<div class="clickDesignContainer">	
+							<img src="img1.jpg">
+						</div>
+					</div>
+					<div class="col-lg-4 col-lg-offset-2 col-xs-6 col-md-6  col">
+						<div class="clickDesignContainer">	
+							<img src="img1.jpg">
+						</div>
+					</div>
+					<div class="col-lg-4 col-xs-6 col-md-6 col">
+						<div class="clickDesignContainer">	
+							<img src="img1.jpg">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+	<div class="container">
+	
+		<div id="product-popup" class="overlay-popup">
+        	<div class="overflow">
+            	<div class="table-view">
+                	<div class="cell-view">
+	                    <div class="close-layer"></div>
+	                        <div class="popup-container dynamicproduct_detail">
+	                        <div class="row">
+	                            <div class="col-sm-6 col-xs-12 information-entry">
+	                                <div class="product-preview-box">
+	                                    <div class="swiper-container product-preview-swiper" data-autoplay="0" data-loop="1" data-speed="500" data-center="0" data-slides-per-view="1">
+	                                        <div class="swiper-wrapper">
+	                                            <div class="swiper-slide">
+	                                                <div class="product-zoom-image firstZoom">
+	                                                    <img src="img/loader.gif" class="img-responsive" alt="" data-zoom="img/product-main-1-zoom.jpg" />
+	                                                </div>
+	                                            </div>
+	                                            <div class="swiper-slide">
+	                                                <div class="product-zoom-image secondZoom">
+	                                                    <img src="img/loader.gif" class="img-responsive"alt="" data-zoom="img/product-main-2-zoom.jpg" />
+	                                                </div>
+	                                            </div>
+	                                            <div class="swiper-slide">
+	                                                <div class="product-zoom-image thirdZoom">
+	                                                    <img src="img/loader.gif" class="img-responsive"alt="" data-zoom="img/product-main-3-zoom.jpg" />
+	                                                </div>
+	                                            </div>
+	                                            <div class="swiper-slide">
+	                                                <div class="product-zoom-image fourthZoom">
+	                                                    <img src="img/loader.gif" class="img-responsive"alt="" data-zoom="img/product-main-4-zoom.jpg" />
+	                                                </div>
+	                                            </div>
+	                                        </div>
+	                                        <div class="pagination"></div>
+	                                        <div class="product-zoom-container">
+	                                            <div class="move-box">
+	                                                <img class="default-image" src="img/loader.gif" alt="" />
+	                                                <img class="zoomed-image" src="img/loader.gif" alt="" />
+	                                            </div>
+	                                            <div class="zoom-area"></div>
+	                                        </div>
+	                                    </div>
+	                                    <div class="swiper-hidden-edges">
+	                                        <div class="swiper-container product-thumbnails-swiper" data-autoplay="0" data-loop="0" data-speed="500" data-center="0" data-slides-per-view="responsive" data-xs-slides="3" data-int-slides="3" data-sm-slides="3" data-md-slides="4" data-lg-slides="4" data-add-slides="4">
+	                                            <div class="swiper-wrapper">
+	                                                <div class="swiper-slide selected">
+	                                                    <div class="paddings-container thumb-first-img">
+	                                                        <img src="img/loader.gif" alt="" />
+	                                                    </div>
+	                                                </div>
+	                                                <div class="swiper-slide">
+	                                                    <div class="paddings-container thumb-second-img">
+	                                                        <img src="img/loader.gif" alt="" />
+	                                                    </div>
+	                                                </div>
+	                                                <div class="swiper-slide">
+	                                                    <div class="paddings-container thumb-third-img">
+	                                                        <img src="img/loader.gif" alt="" />
+	                                                    </div>
+	                                                </div>
+	                                                <div class="swiper-slide">
+	                                                    <div class="paddings-container thumb-fourth-img">
+	                                                        <img src="img/loader.gif" alt="" />
+	                                                    </div>
+	                                                </div>
+	                                            </div>
+	                                            <div class="pagination"></div>
+	                                        </div>
+	                                    </div>
+	                                </div>
+	                            </div>
+	                            <div class="col-sm-6 col-xs-12 information-entry">
+	                               
+	                                <h4>Heading of the pages</h4>
+	                                <div class="list-of-designs-container">
+	                                	<ul>
+	                                		<a href="#">
+		                                		<li class="list-container">
+		                                		
+		                                			<img src="img2.jpg" class="img-responsive" id="designImg">
+		                                			<br>
+		                                			<label id="designCategory">Heading of the image </label>
+		                                			<br>
+		                                			<label id="designName">Name of the Image</label>
+
+		                                			<span class="clear"></span>
+		                                		</li>
+	                                		</a>
+	                                		<a href="#">
+		                                		<li class="list-container">
+		                                		
+		                                			<img src="img2.jpg" class="img-responsive" id="designImg">
+		                                			<br>
+		                                			<label id="designCategory">Heading of the image </label>
+		                                			<br>
+		                                			<label id="designName">Name of the Image</label>
+
+		                                			<span class="clear"></span>
+		                                		</li>
+	                                		</a>
+	                                		<a href="#">
+		                                		<li class="list-container">
+		                                		
+		                                			<img src="img2.jpg" class="img-responsive" id="designImg">
+		                                			<br>
+		                                			<label id="designCategory">Heading of the image </label>
+		                                			<br>
+		                                			<label id="designName">Name of the Image</label>
+
+		                                			<span class="clear"></span>
+		                                		</li>
+	                                		</a>
+	                                		<a href="#">
+		                                		<li class="list-container">
+		                                		
+		                                			<img src="img2.jpg" class="img-responsive" id="designImg">
+		                                			<br>
+		                                			<label id="designCategory">Heading of the image </label>
+		                                			<br>
+		                                			<label id="designName">Name of the Image</label>
+
+		                                			<span class="clear"></span>
+		                                		</li>
+	                                		</a>
+	                                		<a href="#">
+		                                		<li class="list-container">
+		                                		
+		                                			<img src="img2.jpg" class="img-responsive" id="designImg">
+		                                			<br>
+		                                			<label id="designCategory">Heading of the image </label>
+		                                			<br>
+		                                			<label id="designName">Name of the Image</label>
+
+		                                			<span class="clear"></span>
+		                                		</li>
+	                                		</a>
+	                                		<a href="#">
+		                                		<li class="list-container">
+		                                		
+		                                			<img src="img2.jpg" class="img-responsive" id="designImg">
+		                                			<br>
+		                                			<label id="designCategory">Heading of the image </label>
+		                                			<br>
+		                                			<label id="designName">Name of the Image</label>
+
+		                                			<span class="clear"></span>
+		                                		</li>
+	                                		</a>
+	                                		<a href="#">
+		                                		<li class="list-container">
+		                                		
+		                                			<img src="img2.jpg" class="img-responsive" id="designImg">
+		                                			<br>
+		                                			<label id="designCategory">Heading of the image </label>
+		                                			<br>
+		                                			<label id="designName">Name of the Image</label>
+
+		                                			<span class="clear"></span>
+		                                		</li>
+	                                		</a>
+	                                		
+	                                	</ul>
+	                               	</div>
+	                            </div>
+	                        </div>
+	                        <div class="close-popup"></div>
+	                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>	
+	</div>
+
+
+<!-- Latest cdn for jquery -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<script type="text/javascript">
+	$('document').ready(function(){
+		 $('.openDesigns').on('click',this,function(){
+        showPopup($('#product-popup'));
+        //initSwiper();
+        return false;
+    });
+    
+    function showPopup(id){
+        id.addClass('visible active');
+    }
+    function disablePopup(id)
+    {
+        id.hide();
+    }
+    function showProductPopup(id){
+        id.show();
+    }
+	});
+</script>
+</body>
+</html>
